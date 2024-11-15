@@ -1,0 +1,200 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Kontener główny */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Nagłówek */
+header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Sekcje */
+section {
+    padding: 40px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2d3e50;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Formularz kontaktowy */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2d3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1f2b36;
+}
+
+select {
+    height: 35px;
+}
+
+.radio {
+    margin-top: 10px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.formq {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Stopka */
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    /* Zmiana rozmiaru nagłówka */
+    header h1 {
+        font-size: 2em;
+    }
+
+    /* Menu poziome na mniejszych ekranach zmienia się w pionowe */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Zmniejszenie marginesu kontenera */
+    .container {
+        width: 90%;
+    }
+
+    /* Sekcje */
+    section {
+        padding: 30px 0;
+    }
+
+    section h2 {
+        font-size: 1.7em;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
+
+    /* Formularz - dostosowanie do mniejszych ekranów */
+    form input, form textarea {
+        font-size: 0.95em;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+}
+
+/* Dodatkowa responsywność dla urządzeń mobilnych */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}

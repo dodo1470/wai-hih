@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt - Piwo w życiu studenta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Piwo w życiu studenta</h1>
+            <nav>
+                <ul>
+                    <li><a href="landing.html">Główna</a></li>
+                    <li><a href="typy.html">Typy Piwa</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="kontakt">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Chcesz porozmawiać o piwie lub podzielić się swoimi doświadczeniami? Napisz do mnie!</p>
+            <form action="#" method="post">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p class="formq">Lubisz piwo?</p>
+                <label for="tak">Tak!</label>
+                <input class="radio" type="radio" id="tak" name="lubp">
+                <label for="nie">Nie:(</label>
+                <input class="radio" type="radio" id="nie" name="lubp">
+
+                <label for="ulubp">Jaki typ Piwa jest twoim ulubionym?</label>
+                <select id="ulubp">
+                    <option value="0">Wybierz typ piwa</option>
+                    <option value="Tanie">Piwa Tanie</option>
+                    <option value="Premium">Piwa Premium</option>
+                    <option value="Luksusowe">Piwa Luksusowe</option>
+                </select><br>
+
+                <p class="formq">Jakie Piwa smakowałeś?</p>
+                <input type="checkbox" name="zywiec" value="zywiec"><strong>Żywiec:</strong>
+                <input type="checkbox" name="specjal" value="specjal"><strong>Specjal:</strong>
+                <input type="checkbox" name="desperados" value="desperados"><strong>Desperados:</strong>
+                <input type="checkbox" name="guinness" value="guinness"><strong>Guinness:</strong>
+                <input type="checkbox" name="amber" value="amber"><strong>Amber:</strong> <br>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="zdj">Dołącz swoje zdjęcie z piwem</label>
+                <input type="file" id="zdj" name="zdj">
+
+                <button type="submit">Wyślij</button>
+                <button type="reset">Wyczyść</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Piwo w życiu studenta | Dominik Kwidziński s203269</p>
+        </div>
+    </footer>
+</body>
+</html>
